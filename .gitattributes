@@ -1,0 +1,4 @@
+*.xml text eol=lf
+*.c text eol=lf
+Makefile text eol=lf
+
