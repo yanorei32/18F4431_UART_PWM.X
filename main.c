@@ -177,7 +177,7 @@ int main() {
 
 	// PWM output pair mode bits
 	//   1: PWM I/O pin pair is in the independent mode
-    //        PWM0/PWM1, PWM2/PWM3, PWM4/PWM5, PWM6/PWM7
+	//        PWM0/PWM1, PWM2/PWM3, PWM4/PWM5, PWM6/PWM7
 	PWMCON0bits.PMOD = 0b1111;
 
 	// PWM time base timer enable bit
@@ -321,7 +321,7 @@ int main() {
 
 		// float pwmValue = PWM_VALUE_LIMIT / 255.0f * velocity;
 		// unsigned short pwmValue = PWM_TABLE[velocity];
-        unsigned short pwmValue = (unsigned short)(
+		unsigned short pwmValue = (unsigned short)(
 			(uint24_t) velocity * PWM_VALUE_LIMIT / 255
 		);
 
